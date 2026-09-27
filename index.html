@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заявка на заселение в общежитие</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Заявка на заселение в общежитие</h1>
+    <p class="subtitle">Заполните данные, система проверит все условия автоматически</p>
+
+    <form id="applicationForm">
+      <div class="field">
+        <label for="studentId">ID студента</label>
+        <input type="text" id="studentId" name="studentId" required placeholder="Например: 1">
+      </div>
+
+      <div class="field">
+        <label for="buildingNumber">Номер корпуса</label>
+        <input type="text" id="buildingNumber" name="buildingNumber" required placeholder="Например: 3">
+      </div>
+
+      <div class="field">
+        <label for="roomNumber">Номер комнаты</label>
+        <input type="text" id="roomNumber" name="roomNumber" required placeholder="Например: 205">
+      </div>
+
+      <button type="submit" id="submitBtn">Проверить заявку</button>
+    </form>
+
+    <div id="result" class="result hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
